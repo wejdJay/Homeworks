@@ -59,28 +59,21 @@ public class ForthDex {
         }
 
         System.out.println("--------------------------------------------------------- ");
-
-        //Ex(4),this part will take an integer from user and check if it's exist in the array or not.
+ //Resolve Ex(4),this part will take an integer from the user and check if it's existing in the array or not.
         Scanner usin = new Scanner(System.in);
         System.out.println("Please enter any number here to check: ");
         int check = usin.nextInt();
-        ArrayList <Integer> defNums = new ArrayList<Integer>();
-        defNums.add(10);
-        defNums.add(20);
-        defNums.add(30);
-        defNums.add(40);
-        defNums.add(50);
-        defNums.add(60);
-        defNums.add(70);
-        defNums.add(80);
-        defNums.add(90);
-        defNums.add(100);
-        if(defNums.contains(check)){
-            System.out.println("Number "+"("+check+")"+" you have entered has been found successfully.");
-        }
-        else  {
-            System.out.println("Number "+"("+check+")"+" you have entered has been not found");
-        }
+        int [] defNums={10,20,30,40,50,60,70,80,90,100};
+        for(int i=0; i<defNums.length; i++)
+            if(defNums[i]==check){
+                System.out.println("Number "+"("+check+")"+" you have entered has been found successfully.");
+                break;
+            }
+            else  {
+                System.out.println("Number "+"("+check+")"+" you have entered has been not found");
+                break;
+            }
+       
 
         }
 

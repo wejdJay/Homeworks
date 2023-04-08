@@ -65,7 +65,7 @@ public class ForthDex {
         int check = usin.nextInt();
         int [] defNums={10,20,30,40,50,60,70,80,90,100};
         for(int i=0; i<defNums.length; i++)
-            if(defNums[i]==check){
+            if(i==check){
                 System.out.println("Number "+"("+check+")"+" you have entered has been found successfully.");
                 break;
             }

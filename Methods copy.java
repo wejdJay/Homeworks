@@ -15,8 +15,8 @@ public class Methods {
     //here is a method that doesn't return any value to the main method.
     static void calcAge(String name , int age){
         int currentYear= 2023;
-        int bornYear= age;
-        int realAge= currentYear - bornYear;
+        int yearOfBirth= age;
+        int realAge= currentYear - yearOfBirth;
         System.out.println(name +" you are "+realAge+" years old.");
     }
 }

@@ -1,0 +1,27 @@
+public class SelfLearning {
+    public static void main(String[] args) {
+
+        String[][] names = {
+                {"Mohammed", "Khalid", "Ahmad"}, //Boys (0)
+                {"Wejdan", "Aljazi", "Khawlah"},  //Girls (1)
+                {"Amal", "Jood", "Fahad"}  //Kids     (2)
+        };
+
+        for (int x = 0; x < names.length; x++) {
+            if (x == 0) {
+                System.out.println("\nThe boys are: ");
+            }
+            else if (x == 1) {
+                System.out.println("\nThe girls are: ");
+            }
+            else {
+                System.out.println("\nThe kids are: ");}
+
+                for (int y = 0; y < names[x].length; y++) {
+                    //System.out.println(names[x][y]);
+
+                        System.out.println(names[x][y]);
+                    }
+            }
+        }
+    }

@@ -1,3 +1,6 @@
+//This program will orgnize the boys, girls and kids names and print them.
+
+
 public class SelfLearning {
     public static void main(String[] args) {
 

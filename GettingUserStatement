@@ -1,0 +1,14 @@
+import java.util.*;
+public class GettingUserStatement {
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("The start will be from 1, enter how many times you want to print your statement");
+        int userNum = userInput.nextInt();
+        System.out.println("Enter tthe statement you want to print");
+        String userStat = userInput.next();
+        System.out.println("<Your input is> ");
+        for(int i = 1; i<=userNum; i++){
+            System.out.println(i+": "+userStat);
+         }
+    }
+}
